@@ -1,8 +1,9 @@
-MIT License
 
-Copyright (c) 2025 Dmitry V.
+4. Сохрани файл (`Ctrl+S`).
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction...
-(можешь скопировать полный текст MIT позже, сейчас достаточно черновика)
+В PowerShell в папке репо:
+
+```powershell
+Set-Location "E:\Hermes\Git\NeonLab-Jekyll-Arena-Toolkit"
+git add README.md
+git commit -m "Add initial NeonLab README"
