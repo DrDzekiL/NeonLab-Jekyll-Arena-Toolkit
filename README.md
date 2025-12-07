@@ -1,8 +1,8 @@
 # NeonLab Jekyll Arena Toolkit
 
-[![Repo status](https://img.shields.io/badge/status-experimental-blue)](./)
-[![PowerShell](https://img.shields.io/badge/powershell-5.1%2B%20%7C%207.x-5391FE)](https://learn.microsoft.com/powershell/)
-[![Platform](https://img.shields.io/badge/platform-Windows-darkgreen)](./)
+[![Repo status](https://img.shields.io/badge/status-experimental-blue)](./)  
+[![PowerShell](https://img.shields.io/badge/powershell-5.1%2B%20%7C%207.x-5391FE)](https://learn.microsoft.com/powershell/)  
+[![Platform](https://img.shields.io/badge/platform-Windows-darkgreen)](./)  
 [![License](https://img.shields.io/github/license/DrDzekiL/NeonLab-Jekyll-Arena-Toolkit)](./LICENSE)
 
 A minimal but structured automation toolkit built inside the **NeonLab / Arena** system.  
@@ -18,29 +18,113 @@ where market routines, logging, scanning and auxiliary tasks converge into a sin
 `NeonLab Jekyll` is a lightweight automation tool for scanning selected crypto assets and producing structured logs and reports.  
 It is intended to be the “morning engine” of the Arena workflow — a single command that produces an up-to-date market snapshot.
 
-In simple terms:
-
+In simple terms:  
 > **One command → fresh market scan → clear output.**
 
 ---
 
 ## 🚀 Features
 
-- Scan multiple assets (BTC, BNB, ASTER, etc.)
-- Config-driven workflow via JSON
-- Clean timestamped logs
-- Single entry point (`Run-Jekyll.ps1`)
-- Modular code in `src/`
-- Lightweight, portable, no external dependencies
+- Scan multiple assets (BTC, BNB, ASTER, etc.)  
+- Config-driven workflow via JSON  
+- Clean timestamped logs  
+- Single entry point (`Run-Jekyll.ps1`)  
+- Modular code in `src/`  
+- Lightweight, portable, no external dependencies  
 
 ---
 
 ## 🧩 Requirements
 
-- **Windows 10 / 11**
-- **PowerShell 5.1+** or **PowerShell 7 (pwsh)**
-- Internet connection
+- **Windows 10 / 11**  
+- **PowerShell 5.1+** or **PowerShell 7 (pwsh)**  
+- Internet connection  
 - Recommended installation path:
 
 ```text
 C:\NeonLab\NeonLab-Jekyll-Arena-Toolkit\
+```
+
+---
+
+## 📥 Installation
+
+Clone the repository:
+
+```powershell
+git clone https://github.com/DrDzekiL/NeonLab-Jekyll-Arena-Toolkit.git
+cd NeonLab-Jekyll-Arena-Toolkit
+```
+
+Or download ZIP and extract manually.
+
+---
+
+## 🔒 Execution Policy (Required)
+
+PowerShell may block script execution:
+
+```text
+File ...Run-Jekyll.ps1 is not digitally signed. You cannot run this script...
+```
+
+Fix:
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+```
+
+Alternative:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\Run-Jekyll.ps1
+```
+
+---
+
+## ▶️ Quick Start
+
+Ensure config file exists:
+
+```text
+config\example.config.json
+```
+
+Start Jekyll:
+
+```powershell
+.\Run-Jekyll.ps1 -Config ".\config\example.config.json"
+```
+
+Expected:
+
+```text
+[INFO] Mode=Training; Targets=BTC, BNB, ASTER
+```
+
+---
+
+## 📦 Project Structure
+
+```text
+NeonLab-Jekyll-Arena-Toolkit/
+│
+├─ Run-Jekyll.ps1
+├─ config/
+│   └─ example.config.json
+├─ src/
+├─ LICENSE
+└─ README.md
+```
+
+---
+
+## 📜 License
+
+MIT License.
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome.
