@@ -43,3 +43,26 @@ In simple terms:
 
 ```text
 C:\NeonLab\NeonLab-Jekyll-Arena-Toolkit\
+---
+
+## 🧱 What this toolkit solves
+
+- Replaces manual “morning scan” with a single repeatable command.
+- Keeps a clean, timestamped log of what was scanned and when.
+- Serves as a minimal, transparent codebase for building custom Arena automation.
+
+---
+
+## ⚠️ Limitations / Scope
+
+- This toolkit does **not** place trades or connect to exchanges directly.
+- No GUI — everything runs in the PowerShell terminal.
+- Current default focus is a small asset set (BTC, BNB, ASTER); you extend it via config.
+
+---
+
+## 🗺 Roadmap (short)
+
+- Configurable output directory with CSV / JSON exports.
+- Basic per-asset metrics (ranges, volatility flags, simple signals).
+- Optional preset configs for different scan profiles (morning / training / custom).
