@@ -42,3 +42,5 @@ In simple terms:
 - Internet connection
 - Recommended installation path:
 
+```text
+C:\NeonLab\NeonLab-Jekyll-Arena-Toolkit\
