@@ -20,4 +20,3 @@ where market routines, logging, scanning and auxiliary tasks converge into a sin
 ```powershell
 git clone https://github.com/DrDzekiL/NeonLab-Jekyll-Arena-Toolkit.git
 cd NeonLab-Jekyll-Arena-Toolkit
-Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
